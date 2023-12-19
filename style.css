@@ -1,53 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&display=swap");
 
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: black;
-  color: white;
-  font-family: monosp;
 }
-.navbar {
-  /* background-color: white; */
-  width: 100%;
+
+nav {
+  /* background-color:white; */
   height: 15vh;
+  overflow: hidden;
+  border: 3px white;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+}
+
+nav a {
+  float: left;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+nav .btn1 {
+  width: 100px;
+  height: 50px;
+  display: flex;
   justify-content: center;
+  margin-top: 10px;
+  background-color: coral;
+  border-radius: 15px;
   align-items: center;
-  position: fixed;
-  /* backdrop-filter: blur(4px); */
-  z-index: 1;
-}
-li {
-  list-style: none;
-  /* color: black; */
-  color: white;
-  align-items: center;
-  font-weight: bolder;
-  font-size: xx-large;
-}
-.mainlist {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.list {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: black;
-  align-items: center;
-  /* border: 2px solid black; */
 }
 .logo {
-  width: 15%;
+  float: left;
+  display: block;
+  padding: 14.5px 16px;
+  color: white;
 }
-.btn1 {
-  background-color: coral;
-  border-radius: 20px;
-  width: 130px;
-  height: 50px;
-  border: none;
-  font-weight: bolder;
+
+.menu-icon {
+  display: none;
+  float: right;
+  padding: 14px 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.div1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+.div2{
+  height: 80vh;
+  width: 100%;
+  /* background-color: #702b2b; */
+}
+@media screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon:hover {
+    background-color: #444;
+  }
+
+  .responsive-links {
+    overflow: hidden;
+  }
+
+  .responsive-links a {
+    display: block;
+    text-align: left;
+  }
 }
