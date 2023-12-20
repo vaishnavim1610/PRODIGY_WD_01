@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -99,7 +99,7 @@ nav .btn1 {
   border: none;
 }
 .div2 {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 .div2 .our-services {
@@ -118,7 +118,7 @@ nav .btn1 {
   padding: 6%;
 }
 .div2 .container .row .card img {
-  height: 40%;
+  height: 50%;
 }
 .div2 .container .row .card h2 {
   text-align: center;
@@ -129,6 +129,104 @@ nav .btn1 {
   text-align: center;
   margin-top: 2rem;
   color: white;
+}
+.div3 {
+  /* background-color: #fff; */
+  height: 70vh;
+}
+.div3 .container .row #aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div3 .container .row .col-md-6 {
+  height: 60vh;
+}
+.div3 .container .row .col-md-6 .btn1 {
+  background-color: coral;
+  border-radius: 15px;
+  align-items: center;
+  border: none;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.div3 .container .row #aboutusimg {
+  background-image: url(images/about-img\ 2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.div3 .container .row #aboutus h1 {
+  padding: 5% 0%;
+}
+.div3 .container .row #aboutus p {
+  padding: 5% 0%;
+  width: 30rem;
+}
+.div4 {
+  height: 80vh;
+}
+.div4 .premium-menu {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.div4 .container .row {
+  justify-content: center;
+}
+.div4 .container #row-1 .card {
+  background-color: black;
+  /* border: 1px solid rgb(216, 32, 32); */
+  height: 30vh;
+  width: 20em;
+  align-items: center;
+}
+.div4 .container #row-2 .card {
+  background-color: black;
+  /* border: 1px solid rgb(165, 35, 35); */
+  height: 30vh;
+  width: 20em;
+  align-items: center;
+}
+.div4 .container .row img {
+  justify-content: center;
+  height: 60%;
+  width: 55%;
+}
+.div4 .container .row .card h4{
+  color: white;
+  padding-top: 1em;
+}
+.div4 .container .row .card h6{
+  color: white;
+}
+.div5{
+  height: 60vh;
+}
+.div5 .container .row .col-md-6{
+  border: 1px solid gold;
+  justify-content: space-around;
+}
+.div5 .container .row .col-md-6 img{
+  display: flex;
+  justify-content: center;
+}
+.div5 .container .row .col-md-6 p{
+  text-align: center;
+  font-size: xx-large;
+  justify-content: center;
+}
+.div5 .container .row .col-md-6 .btn1{
+  background-color: coral;
+  border-radius: 15px;
+  align-items: center;
+  border: none;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 600px) {
   nav a {
