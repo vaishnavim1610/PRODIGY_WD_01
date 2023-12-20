@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  color: white;
 }
 
 nav {
@@ -31,21 +32,20 @@ nav a {
 }
 nav .btn1 {
   width: 100px;
-  height: 50px;
+  height: 45px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
   background-color: coral;
   border-radius: 15px;
+  border: none;
   align-items: center;
 }
 .logo {
   float: left;
   display: block;
   padding: 14.5px 16px;
-  color: white;
 }
-
 .menu-icon {
   display: none;
   float: right;
@@ -56,12 +56,79 @@ nav .btn1 {
 .div1 {
   height: 100vh;
   width: 100%;
-  background-color: #fff;
 }
-.div2{
+.div1 .container .col-md-6 {
+  display: flex;
+  justify-content: start;
+}
+.div1 .container .col-md-6 img {
+  /* padding-top: 5%; */
+  height: 50%;
+  width: 100%;
+}
+.div1 .container .col-md-6 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10%;
+}
+.div1 .container .col-md-6 .text .text-2 {
+  width: 180px;
+  font-size: 50px;
+}
+.div1 .container .col-md-6 .text .text-3 {
+  text-align: justify;
+}
+.div1 .container .col-md-6 .text-4 {
+  text-align: end;
+  width: 200px;
+  margin: 2% 0% 0% 10%;
+  font-size: larger;
+  font-weight: bolder;
+}
+.div1 .container .col-md-6 .btn1 {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0% 5% 10%;
+  background-color: coral;
+  border-radius: 15px;
+  align-items: center;
+  border: none;
+}
+.div2 {
   height: 80vh;
   width: 100%;
-  /* background-color: #702b2b; */
+}
+.div2 .our-services {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.div2 .container .row {
+  display: flex;
+  justify-content: space-around;
+}
+.div2 .container .row .card {
+  height: 60vh;
+  background-color: black;
+  padding: 6%;
+}
+.div2 .container .row .card img {
+  height: 40%;
+}
+.div2 .container .row .card h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+.div2 .container .row .card p {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
 }
 @media screen and (max-width: 600px) {
   nav a {
