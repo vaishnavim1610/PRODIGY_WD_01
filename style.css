@@ -8,18 +8,24 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
-nav {
-  /* background-color:white; */
+header{
   height: 15vh;
+  width: 100%;
+}
+nav {
+  background-color:black;
+  height: 15vh;
+  width: 100%;
   overflow: hidden;
   border: 3px white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: x-large;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
 }
-
 nav a {
   float: left;
   display: flex;
@@ -28,7 +34,7 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   flex-flow: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 nav .btn1 {
   width: 100px;
@@ -56,6 +62,7 @@ nav .btn1 {
 .div1 {
   height: 100vh;
   width: 100%;
+  /* position:sticky; */
 }
 .div1 .container .col-md-6 {
   display: flex;
@@ -165,7 +172,7 @@ nav .btn1 {
   width: 30rem;
 }
 .div4 {
-  height: 80vh;
+  height: 100vh;
 }
 .div4 .premium-menu {
   height: 12vh;
@@ -179,54 +186,85 @@ nav .btn1 {
 .div4 .container #row-1 .card {
   background-color: black;
   /* border: 1px solid rgb(216, 32, 32); */
-  height: 30vh;
+  height: 40vh;
   width: 20em;
   align-items: center;
 }
 .div4 .container #row-2 .card {
   background-color: black;
   /* border: 1px solid rgb(165, 35, 35); */
-  height: 30vh;
+  height: 40vh;
   width: 20em;
   align-items: center;
+  margin-top: 1em;
 }
 .div4 .container .row img {
   justify-content: center;
   height: 60%;
-  width: 55%;
+  width: 60%;
 }
-.div4 .container .row .card h4{
+.div4 .container .row .card h4 {
   color: white;
   padding-top: 1em;
 }
-.div4 .container .row .card h6{
+.div4 .container .row .card h6 {
   color: white;
 }
-.div5{
-  height: 60vh;
+.div5 {
+  height: 55vh;
 }
-.div5 .container .row .col-md-6{
-  border: 1px solid gold;
-  justify-content: space-around;
+.div5 .container .row .col-md-6 {
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
-.div5 .container .row .col-md-6 img{
+.div5 .container .row #discount {
   display: flex;
   justify-content: center;
 }
-.div5 .container .row .col-md-6 p{
+.div5 .container .row p {
   text-align: center;
   font-size: xx-large;
   justify-content: center;
 }
-.div5 .container .row .col-md-6 .btn1{
+.div5 .container .row .btn1 {
   background-color: coral;
   border-radius: 15px;
-  align-items: center;
   border: none;
   width: 200px;
   height: 60px;
+}
+.div6 {
+  height: 50vh;
+}
+.div6 .new-arrival {
+  height: 12vh;
   display: flex;
   justify-content: center;
+  font-weight: bolder;
+  align-items: center;
+}
+.div6 .container .row {
+  display: flex;
+  justify-content: center;
+}
+.div6 .container .row img {
+  justify-content: center;
+  height: 35%;
+  width: 50%;
+}
+.div6 .container .row .card {
+  background-color: black;
+  height: 40vh;
+  width: 20em;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+.div6 .container .row .card h4 {
+  padding-top: 1em;
 }
 @media screen and (max-width: 600px) {
   nav a {
