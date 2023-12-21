@@ -8,16 +8,15 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-header{
+header {
   height: 15vh;
   width: 100%;
 }
-nav {
-  background-color:black;
-  height: 15vh;
+.nav {
+  background-color: black;
+  height: 14vh;
   width: 100%;
   overflow: hidden;
-  border: 3px white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,18 +25,32 @@ nav {
   overflow: hidden;
   z-index: 1;
 }
-nav a {
-  float: left;
-  display: flex;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  flex-flow: wrap;
-  /* justify-content: space-around; */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  float: left;
+}
+
+a:hover {
+  background-color: #555;
+}
+
 nav .btn1 {
-  width: 100px;
+  width: 120px;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -45,12 +58,21 @@ nav .btn1 {
   background-color: coral;
   border-radius: 15px;
   border: none;
-  align-items: center;
 }
-.logo {
+.nav .logo {
   float: left;
   display: block;
   padding: 14.5px 16px;
+}
+.nav img {
+  height: auto;
+  width: 40%;
+}
+.nav .mainlist {
+  width: 50%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .menu-icon {
   display: none;
@@ -266,7 +288,7 @@ nav .btn1 {
 .div6 .container .row .card h4 {
   padding-top: 1em;
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   nav a {
     display: none;
   }
