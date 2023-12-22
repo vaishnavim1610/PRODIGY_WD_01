@@ -1,1 +1,1 @@
-1.[Restaurant Page](https://github.com/vaishnavim1610/PRODIGY_WD_01/)
+1.[Restaurant Page](https://vaishnavim1610.github.io/PRODIGY_WD_01/)
