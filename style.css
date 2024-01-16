@@ -165,6 +165,7 @@ nav .btn1 {
 .div3 {
   /* background-color: #fff; */
   height: 70vh;
+  margin-left: 10em;
 }
 .div3 .container .row #aboutus {
   display: flex;
@@ -290,6 +291,17 @@ nav .btn1 {
 }
 .div6 .container .row .card h4 {
   padding-top: 1em;
+}
+footer {
+  height: 30vh;
+}
+#image {
+  height: 100%;
+  width: 50%;
+}
+#logos {
+  display: flex;
+  flex-direction: row;
 }
 @media (max-width: 600px) {
   nav a {
